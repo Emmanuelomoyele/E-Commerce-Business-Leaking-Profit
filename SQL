@@ -1,0 +1,33 @@
+/*  =============================================================================
+SECTION 1 — REVENUE vs PROFIT QUALITY BY CATEGORY
+   Q: Does the top-revenue category also drive the most profit?
+
+================================================================================ */
+with  revens  as (
+select 
+product_category,
+round(sum(order_amount),0)			   as Revenue,
+round(sum(profit_amount),0)			   as Profit
+from ecommerce_orders_dataset
+group by product_category
+)
+
+select 
+Product_Category,
+Revenue,
+Profit,
+round(Profit *100.0 / revenue,0)			as Margin_pct,
+round(revenue / sum(revenue) over () *100,0)		    as Revenue_Pct_Share,
+round(Profit / sum(profit) over () *100,0)				as Profit_Pct_Share,
+Rank()   over( order by Revenue desc)					as Rank_Of_Revenue,
+Rank()  over(order by profit desc)						as Rank_Of_Profit
+
+
+from revens 
+order by Profit desc;
+
+/*   Insight: Electronics ranks #1 on both but over-indexes on revenue (56%)
+   vs profit (~47%) due to a thin 16% margin. 
+
+   High-margin categories (Beauty 29%, Fashion 26%) contribute more profit than their revenue share.
+====================================================================================  */
