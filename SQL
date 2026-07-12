@@ -3,7 +3,7 @@ SECTION 1 — REVENUE vs PROFIT QUALITY BY CATEGORY
    Q: Does the top-revenue category also drive the most profit?
 
 ================================================================================ */
-with  revens  as (
+with  categories_total  as (
 select 
 product_category,
 round(sum(order_amount),0)			   as Revenue,
@@ -23,7 +23,7 @@ Rank()   over( order by Revenue desc)					as Rank_Of_Revenue,
 Rank()  over(order by profit desc)						as Rank_Of_Profit
 
 
-from revens 
+from categories_total 
 order by Profit desc;
 
 /*   Insight: Electronics ranks #1 on both but over-indexes on revenue (56%)
