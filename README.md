@@ -12,3 +12,5 @@ Headline findings:
 
 1.	Revenue ≠ profit. Electronics drives 56% of revenue but only 47% of profit - a volume-heavy, low-margin category (16.5% margin vs. 29% for Beauty). Chasing Electronics volume is the least profit-efficient growth path.
 
+2.	Returns concentrate in Fashion. Fashion's return rate (13.9%) runs well above the company average (10.1%), with $50K of profit tied to returned orders — the single largest returns exposure.
+
