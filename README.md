@@ -1,17 +1,18 @@
-E-Commerce-Business-Leaking-Profit
+                                        E-Commerce-Business-Leaking-Profit
 
 A profit-diagnosis analysis of 30,000 e-commerce orders
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Executive Summary
+                                                Executive Summary
+                                                
 This project diagnoses where profit is being lost across an e-commerce business of 30,000 orders spanning 4 years, 8 product categories, and 10 countries. Rather than reporting vanity revenue metrics, the analysis focuses on profit quality — margin, returns, discounting, and fulfilment cost — to answer a single question a real business would pay for: where are we leaking profit, and what should we do about it?
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-Headline findings:
+                                                  Headline findings:
 
 1.	Revenue ≠ profit. Electronics drives 56% of revenue but only 47% of profit - a volume-heavy, low-margin category (16.5% margin vs. 29% for Beauty). Chasing Electronics volume is the least profit-efficient growth path.
 
@@ -19,7 +20,7 @@ Headline findings:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-Recommendations:
+                                                        Recommendations:
 •	Rebalance growth investment toward high-margin categories (Beauty, Fashion) rather than low-margin volume.
 •	Launch a Fashion returns-reduction initiative (sizing guides, richer imagery, subcategory review).
 
@@ -29,7 +30,7 @@ Recommendations:
 
 
 
-Dataset
+                                                Dataset
 ecommerce_orders_dataset.xlsx — 30,000 orders × 41 columns.
 Grain: one row per order. Key fields grouped by theme:
 •	Order & date: Order_ID, Order_Date, Year, Month, Quarter, Season, Holiday_Season
