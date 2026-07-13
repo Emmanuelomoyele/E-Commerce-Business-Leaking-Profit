@@ -31,3 +31,43 @@ order by Profit desc;
 
    High-margin categories (Beauty 29%, Fashion 26%) contribute more profit than their revenue share.
 ====================================================================================  */
+
+
+
+/* =============================================================================
+   SECTION 2 — RETURNS AS A PROFIT DRAIN
+   Q: Which categories return worse than the company average, and what is the
+      profit exposure on returned orders?
+
+   ============================================================================= */
+WITH category_stats AS (
+    SELECT
+        Product_Category,
+        COUNT(*)                                                       AS total_orders,
+        SUM(CASE WHEN Returned = 'Yes' THEN 1 ELSE 0 END)              AS returned_orders,
+        SUM(CASE WHEN Returned = 'Yes' THEN 1 ELSE 0 END) * 100.0
+            / COUNT(*)                                                 AS return_rate_pct,
+        SUM(CASE WHEN Returned = 'Yes' THEN Profit_Amount ELSE 0 END)  AS profit_on_returns
+    FROM ecommerce_orders_dataset
+    GROUP BY Product_Category
+),
+company AS (
+    SELECT SUM(CASE WHEN Returned = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*)
+               AS company_return_rate_pct
+    FROM ecommerce_orders_dataset
+)
+SELECT
+    c.Product_Category,
+    c.total_orders,
+    c.returned_orders,
+    ROUND(c.return_rate_pct, 2)          AS return_rate_pct,
+    ROUND(co.company_return_rate_pct, 2) AS company_return_rate_pct,
+    ROUND(c.profit_on_returns, 2)        AS profit_on_returns
+FROM category_stats c
+CROSS JOIN company co
+WHERE c.return_rate_pct > co.company_return_rate_pct   -- flag: worse than average
+ORDER BY c.return_rate_pct DESC;
+
+/* Insight: company rate 10.1%. Fashion (13.9%, $50K profit exposure) and
+   Books (10.9%, $4K) exceed it. Fashion is the priority.
+   Caveat: booked profit understates true return cost (reverse logistics). */
