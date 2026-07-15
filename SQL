@@ -6,8 +6,8 @@ SECTION 1 — REVENUE vs PROFIT QUALITY BY CATEGORY
 with  categories_total  as (
 select 
 product_category,
-round(sum(order_amount),0)			   as Revenue,
-round(sum(profit_amount),0)			   as Profit
+round(sum(order_amount),0)			                   as Revenue,
+round(sum(profit_amount),0)			                as Profit
 from ecommerce_orders_dataset
 group by product_category
 )
@@ -16,11 +16,11 @@ select
 Product_Category,
 Revenue,
 Profit,
-round(Profit *100.0 / revenue,0)			as Margin_pct,
+round(Profit *100.0 / revenue,0)			             as Margin_pct,
 round(revenue / sum(revenue) over () *100,0)		    as Revenue_Pct_Share,
-round(Profit / sum(profit) over () *100,0)				as Profit_Pct_Share,
-Rank()   over( order by Revenue desc)					as Rank_Of_Revenue,
-Rank()  over(order by profit desc)						as Rank_Of_Profit
+round(Profit / sum(profit) over () *100,0)			 as Profit_Pct_Share,
+Rank()   over( order by Revenue desc)					 as Rank_Of_Revenue,
+Rank()  over(order by profit desc)						 as Rank_Of_Profit
 
 
 from categories_total 
@@ -35,9 +35,8 @@ order by Profit desc;
 
 
 /* =============================================================================
-   SECTION 2 — RETURNS AS A PROFIT DRAIN
-   Q: Which categories return worse than the company average, and what is the
-      profit exposure on returned orders?
+   SECTION 2 — HOW RETURNS DRAIN PROFIT.
+   Q: Which product categories have a return rate higher than the company average, and how much profit is lost on those returned orders?
 
    ============================================================================= */
 WITH category_stats AS (
