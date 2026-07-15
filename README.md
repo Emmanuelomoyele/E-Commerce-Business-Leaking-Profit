@@ -57,9 +57,9 @@ iii)	and checking which specific Fashion items are returned most often.
 
 
                                                Dataset
-ecommerce_orders_dataset.xlsx — 30,000 orders × 41 columns.
+Ecommerce_orders_dataset.xlsx — 30,000 orders × 41 columns.
 
-Grain: one row per order. Key fields grouped by theme:
+ Key fields grouped by theme:
 
 •	Order & date: Order_ID, Order_Date, Year, Month, Quarter, Season, Holiday_Season
 
