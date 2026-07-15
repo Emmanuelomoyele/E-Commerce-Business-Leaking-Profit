@@ -1,4 +1,4 @@
-**                                  E-Commerce-Business-Leaking-Profit**
+                    **                              E-Commerce-Business-Leaking-Profit**
 
 A profit-diagnosis analysis of 30,000 e-commerce orders
 --------------------------------------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ Where are we losing profit, and what can we do to fix it?**
 --------------------------------------------------------------------------------------------------------------
 
 
-**
-                                            Headline findings:
+                 **
+                                                   Headline findings:
 **
 1.	Revenue ≠ profit (Revenue is not the same as profit)
 Electronics makes up 56% of all sales, but only 47% of all profit.
@@ -38,7 +38,7 @@ This is the biggest returns problem the company has.
 
 --------------------------------------------------------------------------------------------------------------
 
-**Recommendations:**
+                                              **Recommendations:**
 
 •	 Put more money and effort into growing categories that make higher profit per sale, like Beauty and Fashion, instead of chasing big sales numbers in low-profit categories like Electronics.
 
