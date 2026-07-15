@@ -38,7 +38,7 @@ This is the biggest returns problem the company has.
 
 --------------------------------------------------------------------------------------------------------------
 
-                                              ecommendations:
+                                              Recommendations:
 
 •	 Put more money and effort into growing categories that make higher profit per sale, like Beauty and Fashion, instead of chasing big sales numbers in low-profit categories like Electronics.
 
