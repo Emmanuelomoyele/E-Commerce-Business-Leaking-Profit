@@ -9,7 +9,9 @@ A profit-diagnosis analysis of 30,000 e-commerce orders
 This project looks at 30,000 online orders over 4 years.
 It covers 8 types of products and 10 countries.
 Instead of just looking at total sales which can look good but don't tell the full story this analysis focuses on what really matters for profit:
+
 •	Profit margins (how much is left after costs),
+
 •	Returns,
 
 •	Discounts given to customers, and
@@ -39,9 +41,13 @@ This is the biggest returns problem the company has.
 Recommendations:
 
 •	 Put more money and effort into growing categories that make higher profit per sale, like Beauty and Fashion, instead of chasing big sales numbers in low-profit categories like Electronics.
+
 •	Start a plan to cut down on Fashion returns by:
+
 i)	adding better size guides,
+
 ii)	using more detailed product photos,
+
 iii)	and checking which specific Fashion items are returned most often.
 
 
