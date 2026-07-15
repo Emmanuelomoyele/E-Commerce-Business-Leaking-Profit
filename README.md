@@ -1,17 +1,19 @@
-E-Commerce-Business-Leaking-Profit
+                                  E-Commerce-Business-Leaking-Profit
 
 A profit-diagnosis analysis of 30,000 e-commerce orders
 --------------------------------------------------------------------------------------------------------------
 
 
-Executive Summary
+                                              Executive Summary
                                                 
 This project looks at 30,000 online orders over 4 years.
 It covers 8 types of products and 10 countries.
 Instead of just looking at total sales which can look good but don't tell the full story this analysis focuses on what really matters for profit:
 •	Profit margins (how much is left after costs),
 •	Returns,
+
 •	Discounts given to customers, and
+
 •	Shipping and handling costs.
 
 The goal is to answer one important question that any real business would ask:
@@ -20,7 +22,7 @@ Where are we losing profit, and what can we do to fix it?
 
 
 
-Headline findings:
+                                            Headline findings:
 
 1.	Revenue ≠ profit (Revenue is not the same as profit)
 Electronics makes up 56% of all sales, but only 47% of all profit.
