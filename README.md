@@ -1,4 +1,4 @@
-                    **                              E-Commerce-Business-Leaking-Profit**
+                                                  E-Commerce-Business-Leaking-Profit
 
 A profit-diagnosis analysis of 30,000 e-commerce orders
 --------------------------------------------------------------------------------------------------------------
