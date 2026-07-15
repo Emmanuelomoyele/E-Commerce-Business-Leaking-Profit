@@ -4,7 +4,7 @@ A profit-diagnosis analysis of 30,000 e-commerce orders
 --------------------------------------------------------------------------------------------------------------
 
 
-                                         **     Executive Summary**
+                                                  Executive Summary
                                                 
 This project looks at 30,000 online orders over 4 years.
 It covers 8 types of products and 10 countries.
@@ -23,9 +23,9 @@ Where are we losing profit, and what can we do to fix it?**
 --------------------------------------------------------------------------------------------------------------
 
 
-                 **
+                 
                                                    Headline findings:
-**
+
 1.	Revenue ≠ profit (Revenue is not the same as profit)
 Electronics makes up 56% of all sales, but only 47% of all profit.
 That means it sells a lot but earns less per item its profit margin is 16.5%, while Beauty’s is 29%.
@@ -38,7 +38,7 @@ This is the biggest returns problem the company has.
 
 --------------------------------------------------------------------------------------------------------------
 
-                                              **Recommendations:**
+                                              ecommendations:
 
 •	 Put more money and effort into growing categories that make higher profit per sale, like Beauty and Fashion, instead of chasing big sales numbers in low-profit categories like Electronics.
 
@@ -56,7 +56,7 @@ iii)	and checking which specific Fashion items are returned most often.
 
 
 
-                                            **    Dataset**
+                                               Dataset
 ecommerce_orders_dataset.xlsx — 30,000 orders × 41 columns.
 
 Grain: one row per order. Key fields grouped by theme:
